@@ -1,0 +1,39 @@
+name: pg_base_baseline
+scenario: pg_base
+
+defaults:
+  - persona@personas.persona_0: baseline_businessman
+  - persona@personas.persona_1: baseline_businessman
+  - persona@personas.persona_2: baseline_businessman
+  - persona@personas.persona_3: baseline_businessman
+  - persona@personas.persona_4: baseline_businessman
+
+env:
+  name: pg_base_baseline
+  max_num_rounds: 12
+  max_input: 100
+  min_input: 40
+  min_payoff_to_survive: null
+  num_agents: 2
+  perturbations: []
+  event_expiration_months: 3
+
+personas:
+  num: ${experiment.env.num_agents}
+  persona_0: 
+    name: John
+  persona_1:
+    name: Kate
+
+agent:
+  system_prompt: nocom
+  cot_prompt: null # think_step_by_step | deep_breath
+  act:
+    consider_identity_persona: true
+
+  reflect:
+    exclude_thoughts_from_prompt: true
+
+  store:
+    expiration_delta:
+      days: 100

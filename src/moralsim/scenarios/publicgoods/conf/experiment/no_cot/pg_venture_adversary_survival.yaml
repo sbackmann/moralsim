@@ -1,0 +1,14 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: adversary_businessman_2
+
+name: pg_venture_adversary_survival
+scenario: pg_venture
+
+env:
+  name: pg_venture_adversary_survival
+  min_earnings_to_survive: 20
+  perturbations:
+    - perturbation:
+        round: 4
+        type: low_earnings_season

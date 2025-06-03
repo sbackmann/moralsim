@@ -1,0 +1,13 @@
+defaults:
+  - pd_base_baseline
+  - override persona@personas.persona_1: dummy_adversary
+
+name: pd_privacy_dummy_defect_cot_p0
+scenario: pd_privacy
+
+env:
+  name: pd_privacy_dummy_defect_cot_p0
+
+agent:
+  system_prompt: p0_nocom
+  cot_prompt: think_step_by_step

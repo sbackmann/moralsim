@@ -1,0 +1,15 @@
+defaults:
+  - pd_base_baseline
+  - override persona@personas.persona_1: dummy_businessman
+
+name: pd_venture_dummy_cooperate_survival
+scenario: pd_venture
+
+env:
+  name: pd_venture_dummy_cooperate_survival
+  min_payoff_to_survive: 20
+  perturbations:
+  - perturbation:
+      round: 3
+      type: low_inputs_season
+      min_payoff_to_survive: 20

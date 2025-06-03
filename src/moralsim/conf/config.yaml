@@ -1,0 +1,29 @@
+code_version: v7.0
+group_name: ''
+
+llm: 
+  path: meta-llama/Llama-3.1-8B-Instruct
+  backend: transformers
+  is_api: false
+  render: false
+  temperature: 0.0
+  top_p: 1.0
+
+mix_llm: [] # disable
+
+seed: 0
+debug: false  
+result_dir: results
+defaults:
+- experiment: basic
+
+
+hydra:
+  run:
+    dir: ./outputs/${uuid:}
+  searchpath:
+    - pkg://moralsim.scenarios.fishing.conf
+    - pkg://moralsim.scenarios.sheep.conf
+    - pkg://moralsim.scenarios.pollution.conf
+    - pkg://moralsim.scenarios.prisoner.conf
+    - pkg://moralsim.scenarios.publicgoods.conf

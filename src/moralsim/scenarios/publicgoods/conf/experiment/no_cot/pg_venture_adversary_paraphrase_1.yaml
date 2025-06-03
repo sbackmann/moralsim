@@ -1,0 +1,12 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: adversary_businessman
+
+name: pg_venture_adversary_paraphrase_1
+scenario: pg_venture
+
+env:
+  name: pg_venture_adversary_paraphrase_1
+
+agent:
+  system_prompt: p1_nocom

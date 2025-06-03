@@ -1,0 +1,9 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: dummy_adversary
+
+name: pg_base_dummy_defect
+scenario: pg_base
+
+env:
+  name: pg_base_dummy_defect

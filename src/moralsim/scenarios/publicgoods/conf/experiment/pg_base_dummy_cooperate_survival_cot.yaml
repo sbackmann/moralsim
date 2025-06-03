@@ -1,0 +1,18 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: dummy_businessman
+
+name: pg_base_dummy_cooperate_survival_cot
+scenario: pg_base
+
+env:
+  name: pg_base_dummy_cooperate_survival_cot
+  min_payoff_to_survive: 20
+  perturbations:
+  - perturbation:
+      round: 3
+      type: low_inputs_season
+      min_payoff_to_survive: 20
+
+agent:
+  cot_prompt: think_step_by_step

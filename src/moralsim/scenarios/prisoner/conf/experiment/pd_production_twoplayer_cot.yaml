@@ -1,0 +1,11 @@
+defaults:
+  - pd_base_baseline
+
+name: pd_production_twoplayer_cot
+scenario: pd_production
+
+env:
+  name: pd_production_twoplayer_cot
+
+agent:
+  cot_prompt: think_step_by_step

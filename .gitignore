@@ -1,0 +1,13 @@
+__pycache__/
+.vscode/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Tests & results
+results/
+outputs/
+wandb/
+api_usage_openrouter/
+api_usage/

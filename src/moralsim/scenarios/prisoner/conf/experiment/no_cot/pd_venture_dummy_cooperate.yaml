@@ -1,0 +1,9 @@
+defaults:
+  - pd_base_baseline
+  - override persona@personas.persona_1: dummy_businessman
+
+name: pd_venture_dummy_cooperate
+scenario: pd_venture
+
+env:
+  name: pd_venture_dummy_cooperate

@@ -1,0 +1,11 @@
+defaults:
+  - pd_base_baseline
+  - override persona@personas.persona_1: dummy_businessman
+
+name: pd_base_dummy_cooperate_cot
+
+env:
+  name: pd_base_dummy_cooperate_cot
+
+agent:
+  cot_prompt: think_step_by_step

@@ -1,0 +1,9 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: dummy_businessman
+
+name: pg_base_dummy_cooperate
+scenario: pg_base
+
+env:
+  name: pg_base_dummy_cooperate

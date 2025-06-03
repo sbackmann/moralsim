@@ -1,0 +1,11 @@
+defaults:
+  - pg_base_baseline
+
+name: pg_venture_baseline_paraphrase_0
+scenario: pg_venture
+
+env:
+  name: pg_venture_baseline_paraphrase_0
+
+agent:
+  system_prompt: p0_nocom

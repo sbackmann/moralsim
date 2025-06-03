@@ -1,0 +1,15 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: dummy_worsening
+
+name: pg_venture_dummy_worsening
+scenario: pg_venture
+
+env:
+  name: pg_venture_dummy_worsening
+  max_num_rounds: 18
+  perturbations:
+  - perturbation:
+      round: 12
+      type: low_inputs_season
+      min_payoff_to_survive: 20

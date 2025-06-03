@@ -1,0 +1,9 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: adversary_businessman_2
+
+name: pg_venture_adversary
+scenario: pg_venture
+
+env:
+  name: pg_venture_adversary

@@ -1,0 +1,4 @@
+[submodule "pathfinder"]
+	path = pathfinder
+	url = https://github.com/sbackmann/PathFinder
+	branch = custom

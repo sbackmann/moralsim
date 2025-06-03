@@ -1,0 +1,12 @@
+defaults:
+  - pg_base_baseline
+  - override persona@personas.persona_1: dummy_adversary
+
+name: pg_venture_dummy_defect_cot
+scenario: pg_venture
+
+env:
+  name: pg_venture_dummy_defect_cot
+
+agent:
+  cot_prompt: think_step_by_step
